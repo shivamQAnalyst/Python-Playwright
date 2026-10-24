@@ -19,7 +19,7 @@ async def test_locator_strategies():
         # Locate the username field using its placeholder
         username_placeholder = page.get_by_placeholder("Username")
 
-        # Verify that the field is visible
+        # Verify that the field is visible text
         await expect(username_placeholder).to_be_visible()
 
         # Enter the username
